@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Desarrollador Junior y Soporte IT</title>
+    <style>
+        /* 1. Ocupar toda la pantalla y eliminar márgenes por defecto */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 2. El contenedor principal ocupa el espacio y centra el container */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;     /* Centra verticalmente */
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* 3. La tarjeta blanca recibe el límite de ancho */
+        .container {
+            background: #fff;
+            width: 100%;
+            max-width: 800px; /* Aquí es donde debe ir el límite de ancho */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            word-break: break-all; /* Evita que los enlaces largos rompan el ancho */
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .item-date {
+            float: right;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        /* 4. Footer a todo lo ancho */
+        footer {
+            background-color: dimgrey;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="container">
+        <!-- CABECERA DE CONTACTO -->
+        <h1>Ramón Moreno Gálvez</h1>
+        <div class="subtitle">Técnico en Desarrollo de Aplicaciones Multiplataforma (2º DAM) | Soporte IT</div>
+        <div class="contact">
+            📍 Comunidad valenciana,Orihuela Costa, España | ✉️ rmgelpp@gmail.com | 🔗
+            https://www.linkedin.com/in/ram%C3%B3n-moreno-g%C3%A1lvez-36bbba3b9/ | 💻 https://github.com/RamonMoreno-dev
+        </div>
+
+        <!-- PERFIL PROFESIONAL -->
+        <h2>Perfil Profesional</h2>
+        <p>
+            Programador de Java junior, técnico superior en Desarrollo de Aplicaciones Multiplataforma (DAM) con
+            Bachillerato finalizado. Experiencia práctica en mantenimiento de dispositivos móviles, redes locales y
+            soporte técnico. Desarrollador de proyectos Java orientados a la gestión bancaria y programación orientada a
+            objetos. Proactivo, analítico y enfocado en la resolución de incidencias informáticas.
+        </p>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <h2>Experiencia Laboral</h2>
+        <div class="item">
+            <span class="item-date">Marzo 2025 - Junio 2025</span>
+            <div class="item-title">Técnico de Mantenimiento de Dispositivos y Redes (Prácticas)</div>
+            <div>Supermercados DIA — Valencia</div>
+            <ul>
+                <li>Mantenimiento informático preventivo y correctivo de terminales móviles y PDAs de almacén.</li>
+                <li>Configuración y supervisión de la red local (LAN/Wi-Fi) e infraestructura de telecomunicaciones en
+                    tienda.
+                </li>
+                <li>Resolución de incidencias de hardware, software y conectividad en sistemas TPV.</li>
+                <li>Atención de soporte técnico interno para la optimización de procesos operativos.</li>
+            </ul>
+        </div>
+
+        <!-- PROYECTOS DESTACADOS -->
+        <h2>Proyectos de Desarrollo</h2>
+        <div class="item">
+            <span class="item-date">2025</span>
+            <div class="item-title">Sistema de Gestión Bancaria (Proyecto Personal - DAM)</div>
+            <ul>
+                <li>Desarrollo de una aplicación bancaria en <strong>Java</strong> aplicando principios de Programación
+                    Orientada a Objetos (POO).
+                </li>
+                <li>Implementación de funciones para creación de cuentas, transferencias, control de saldo y validación
+                    de usuarios.
+                </li>
+                <li>Gestión de datos, estructuras en memoria y manejo de constantes complejas con <code>Math.PI</code> y
+                    algoritmos de cálculo financiero.
+                </li>
+                <li>Control de versiones y repositorio administrado mediante <strong>Git</strong>.</li>
+            </ul>
+        </div>
+
+        <!-- EDUCACIÓN -->
+        <h2>Educación y Formación</h2>
+        <div class="item">
+            <span class="item-date">2024 - Presente</span>
+            <div class="item-title">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</div>
+            <div>1º Curso completado — Las Espeñetas</div>
+            <br>
+            <div>... 2º Curso en proceso — IES Thiar</div>
+
+
+        </div>
+        <div class="item">
+            <span class="item-date">2022 - 2024</span>
+            <div class="item-title">Bachillerato de ciencias</div>
+            <div>IES THADER</div>
+        </div>
+
+        <!-- HABILIDADES TÉCNICAS -->
+        <h2>Habilidades y Competencias</h2>
+        <ul>
+            <li><strong>Lenguajes de Programación:</strong> Java, SQL, HTML/CSS.</li>
+            <li><strong>Sistemas y Redes:</strong> Mantenimiento de redes informáticas, configuración de redes
+                Wi-Fi/LAN, mantenimiento de móviles/PDAs.
+            </li>
+            <li><strong>Herramientas y Entornos:</strong> Git, GitHub, Eclipse, IntelliJ IDEA, resolución de
+                incidencias.
+            </li>
+        </ul>
+
+
+    </div>
+</main>
+
+<footer> Página web diseñada por Ramón Moreno Gálvez</footer>
+
+</body>
+
+
+</html>
