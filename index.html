@@ -99,56 +99,69 @@
         .top-bar {
             position: absolute;
             top: 20px;
-            left: 20px;
-            right: 20px;
+            left: 25px;
+            right: 25px;
         
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-    
-        .social-icons {
+        
+        .social-right {
             display: flex;
             gap: 15px;
         }
-    
-        .icon-link {
+        
+        .social-icon {
+            width: 45px;
+            height: 45px;
+        
             display: flex;
             align-items: center;
-            gap: 8px;
+            justify-content: center;
         
-            color: black;
-            text-decoration: none;
-            font-size: 16px;
-        
-            padding: 100px 140px;
-            border-radius: 10px;
-        
-            transition: 0.3s ease;
+            border-radius: 50%;
+            transition: all 0.3s ease;
         }
-
-        .icon-link:hover {
-            background: rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
+        
+        .social-icon img {
+            width: 26px;
+            height: 26px;
+        
+            filter: invert(1);
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-4px) scale(1.1);
+            background: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
 <body>
 <main>
     <header class="top-bar">
-        <a href="mailto:tuemail@gmail.com" class="icon-link">
-            ✉️ <span>Correo</span>
+
+        <!-- Correo: arriba a la izquierda -->
+        <a href="mailto:tuemail@gmail.com" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"
+                 alt="Correo">
         </a>
     
-        <div class="social-icons">
-            <a href="https://linkedin.com/" target="_blank" class="icon-link">
-                in <span>LinkedIn</span>
+        <!-- LinkedIn y GitHub: arriba a la derecha -->
+        <div class="social-right">
+    
+            <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                     alt="LinkedIn">
             </a>
     
-            <a href="https://github.com/" target="_blank" class="icon-link">
-                ◉ <span>GitHub</span>
+            <a href="https://github.com/" target="_blank" class="social-icon">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                     alt="GitHub">
             </a>
+    
         </div>
+    
     </header>
     
     <div class="container">
