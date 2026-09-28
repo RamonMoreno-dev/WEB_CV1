@@ -96,10 +96,61 @@
             text-align: center;
             width: 100%;
         }
+        .top-bar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+    
+        .icon-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        
+            padding: 10px 14px;
+            border-radius: 10px;
+        
+            transition: 0.3s ease;
+        }
+
+        .icon-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
 <main>
+    <header class="top-bar">
+        <a href="mailto:tuemail@gmail.com" class="icon-link">
+            ✉️ <span>Correo</span>
+        </a>
+    
+        <div class="social-icons">
+            <a href="https://linkedin.com/" target="_blank" class="icon-link">
+                in <span>LinkedIn</span>
+            </a>
+    
+            <a href="https://github.com/" target="_blank" class="icon-link">
+                ◉ <span>GitHub</span>
+            </a>
+        </div>
+    </header>
+    
     <div class="container">
         <!-- CABECERA DE CONTACTO -->
         <h1>Ramón Moreno Gálvez</h1>
